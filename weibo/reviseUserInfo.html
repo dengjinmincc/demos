@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		<title></title>
+	</head>
+	<body class="pic">
+		<nav class="navbar navbar-default" role="navigation">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      			<a class="navbar-brand" href="#">Brand</a>
+    		</div>
+
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav">
+        			<li class="active"><a href="index.html">首页</a></li>
+        			<li><a href="homepage.html">个人主页</a></li>
+        			<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown">个人信息 <span class="caret"></span></a>
+          				<ul class="dropdown-menu" role="menu">
+            				<li><a href="checkUserInfo.html">个人信息查看</a></li>
+            				<li class="divider"></li>
+            				<li><a href="#">个人信息修改</a></li>
+          				</ul>
+        			</li>
+      			</ul>
+      			<form class="navbar-form navbar-right" role="search">
+        			<div class="form-group">
+          				<input type="text" class="form-control" placeholder="搜索用户">
+        			</div>
+        			<button type="submit" class="btn btn-default">搜索</button>
+      			</form>
+    		</div>
+  		</div>
+	</nav>
+		
+	<div class="container" style="background-color: rgba(11,69,134,0.25);">
+		<div class="col-md-3 person_info">
+			<div class="cover">
+				<div class="headpic">
+					<a href="#">
+						<img src="img/6cd3da66jw8ez1sdk0chwj20to0tpdkq.jpg" alt="" width="80" height="80"/>
+					</a>
+				</div>
+			</div>
+			<div class="innerWrap">
+				<div class="name_box">
+					<a href="#" class="name1">GDRAGON_OFFICIAL</a><!--用户名-->
+				</div>
+				<div class="slogan">
+					简介:<span>哇哈哈哈哈哈哈哈哈哈哈哈</span>
+				</div>
+			</div>
+			<div class="recommend">
+				
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3>个人信息修改</h3>
+			<form action="" class="form-horizontal" method="post">
+			<div class="form-group">
+				<div class="row">
+					<label for="" class="col-md-2 control-label">
+						用户名:
+					</label>
+					<div class="col-md-10">
+						<input type="text" class="form-control" placeholder="用户名"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<label for="" class="col-md-2 control-label">
+						性别:
+					</label>
+					<div class="col-md-10 radio">
+						<label class="col-md-4"><input type="radio" name="sex" value="male" checked/>男</label>
+						<label><input type="radio" name="sex" value="female"/>女</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<label for="" class="col-md-2 control-label">
+						出生年月:
+					</label>
+					<div class="col-md-10">
+						<select name="" id="" style="color:#000">
+							<option value="">1990</option>
+							<option value="">1991</option>
+							<option value="">1992</option>
+							<option value="">1993</option>
+							<option value="">1994</option>
+							<option value="">1995</option>
+							<option value="">1996</option>
+							<option value="">1997</option>
+							<option value="">1998</option>
+							<option value="">1999</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<label for="" class="col-md-2 control-label">
+						籍贯:
+					</label>
+					<div class="col-md-10">
+						<select name="" id="" style="color:#000">
+							<option value="">四川</option>
+							<option value="">广西</option>
+							<option value="">广东</option>
+							<option value="">云南</option>
+							<option value="">青海</option>
+							<option value="">西藏</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<label for="" class="col-md-2 control-label">
+						学历:
+					</label>
+					<div class="col-md-10">
+						<select name="" id="" style="color:#000">
+							<option value="">中专</option>
+							<option value="">大专</option>
+							<option value="">本科</option>
+							<option value="">研究生</option>
+							<option value="">博士</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-offset-2">
+						<input type="reset" value="重置"/>
+						<input type="submit" value="修改"/>
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>	
+	</body>
+</html>
