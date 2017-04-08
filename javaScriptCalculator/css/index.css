@@ -1,0 +1,44 @@
+@import url("http://fonts.googleapis.com/css?family=Oleo+Script");
+
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #56351E;
+}
+.calculator{
+	width: 300px;
+	height: 350px;
+	text-align: center;
+	margin:107px auto;
+	border-radius: 10px;
+	background-color: #BC7A35;
+	padding: 5px;
+}
+h1{
+	font-size: 20px;
+	margin-top:10px;
+	color: #F19953;
+}
+.textbox{
+	background-color:  #F19953;
+	width: 275px;
+	height: 25px;
+	border: none;
+	margin-top: 10px;
+	text-align: right;
+}
+.buttons{
+	width: 275px;
+	text-align: center;
+	margin: 10px auto;
+}
+button{
+	width: 64.75px;
+	float: left;
+	cursor: pointer;
+	color: #f19953;
+	background-color: #fff;
+	margin: 2px;
+	border: none;
+	height: 40px;
+}
