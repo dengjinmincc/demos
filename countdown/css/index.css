@@ -1,0 +1,29 @@
+.countdown{
+	width: 300px;
+	margin: 70px auto;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.time span{
+	border: 2px solid #AEB6AA;
+	padding: 3px 11px;
+	background-color: #EFF7EC;
+	color: #08104C;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+button{
+	width: 283px;
+	height: 50px;
+	cursor: pointer;
+	background: url(../img/btn-1.png) no-repeat;
+	margin-top: 30px;
+	border: 0;	
+}
+button.cancel{
+	background-position: 0 -50px;
+}
