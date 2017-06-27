@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+body{
+	color: #333333;
+	background-color: #E3E3E3;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 70%;
+	height: 400px;
+	margin: 10% auto;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.container h1{
+	text-align: center;
+	font-weight: normal;
+	position: relative;
+	top: 20px;
+}
+.quote{
+	width: 80%;
+	height: 200px;
+	border: 1px solid #E3E3E3;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+	position: relative;
+	top: 40px;
+	left: 90px;
+}
+.quote p{
+	margin-top: 50px;
+	text-align: center;
+}
+.quote h2{
+	font-weight: normal;
+	margin-top: 30px;
+	text-align: center;
+}
+.share{
+	position: relative;
+	top: 70px;
+	left: 200px;
+}
+.share a{
+	display: inline-block;
+	width: 122px;
+	height: 44px;
+	border: 1px solid #CCCCCC;
+	color: #333333;
+	border-radius: 7px;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 50px;
+}
+.share a:hover{
+	background-color: #E6E6E6;
+}
