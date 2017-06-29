@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>fuzzy search</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#search{
+				width: 300px;
+				height: 30px;
+				margin-top: 150px;
+				margin-left: 500px;
+				padding-left: 7px;
+				border: 1px solid lightgray;
+			}
+			ul{
+				width: 308px;
+				list-style: none;
+				margin-left: 500px;
+			}
+			li{
+				height: 30px;
+				border: 1px solid lightgray;
+				padding-left: 7px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="search" />
+		<ul id="list">
+		</ul>
+		
+		<script>
+			function getResult(response){
+				let list = document.getElementById("list"), 
+					html = "";
+				if(response){
+					list.style.display = 'block';
+					for(let i = 0; i < response.s.length; i++){
+						html += "<li>" + response.s[i]+ "</li>";
+					}
+				}
+				list.innerHTML = html;
+				
+			}
+			window.onload = function(){
+				var result = document.getElementById("search"), 
+					list = document.getElementById("list");
+				
+				result.onkeyup = function(){
+					if(result.value != ''){
+						var script = document.createElement("script");
+						script.src='http://unionsug.baidu.com/su?wd='+this.value+'&p=3&cb=getResult';
+						document.body.appendChild(script);
+					}else{
+						list.style.display = "none";
+					}
+				}
+			}
+		</script>
+		
+		<!--<script src="js/jquery-3.2.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var res = $("#search"), html = "";
+				res.keyup(function(){
+					$.ajax({
+						type: "get",
+						url: "http://unionsug.baidu.com/su?wd="+res.val()+"&p=3",
+						async: false,
+						jsonp: "jsonp", 
+						dataType: "jsonp", 
+						success: function(response){
+							if(response){
+								for(let i = 0; i < response.s.length; i++){
+									html += "<li>" + response.s[i] + "</li>";
+								}
+							}
+							$("ul").html(html);
+						}, 
+						error: function(){
+							alert("请求出错!");
+						}
+					});
+				})
+				/*$.ajax({
+					type:"get",
+					url:"http://unionsug.baidu.com/su",
+					async:false,
+					jsonp: 'jsonp', 
+					dataType: 'jsonp', 
+					data: {
+						wd: 
+					}
+				});*/
+			})
+		</script>-->
+	</body>
+</html>
