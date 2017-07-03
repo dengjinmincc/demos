@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Show the Local Weather</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<section>
+				<div class="actual">
+					<div class="actual_temp">
+						<div>实时天气 | 苏州</div>
+						<i></i>
+						<h2>31</h2>
+					</div>
+					<div class="actual_info">
+						<div class="info">
+							<div>湿度</div>
+							<span>94%</span>
+						</div>
+						<div class="info">
+							<div>风向</div>
+							<span>东风</span>
+						</div>
+						<div class="info">
+							<div>风力强度</div>
+							<span>1级</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<!--<script src="js/jquery-3.2.1.min.js"></script>-->
+		<!--<script src="js/index.js"></script>-->
+		<script>
+			function showWeather(response){
+				var temp = document.getElementById("temp");
+				//temp.innerText = response.result.sk.temp;
+				console.log(response);
+			}
+			window.onload = function(){
+				var update = document.getElementById("update");
+				
+				update.onclick = function(){
+					let script = document.createElement("script");
+					script.src = "http://v.juhe.cn/weather/index?format=2&cityname=%E8%8B%8F%E5%B7%9E&key=ff8591e26fee2f9902562d1332f683f2&callback=showWeather";
+					document.body.appendChild(script);
+					
+				}
+			}
+		</script>
+	</body>
+</html>
