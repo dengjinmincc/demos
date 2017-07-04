@@ -10,15 +10,14 @@ body{
 }
 .container{
 	width: 70%;
-	height: 400px;
+	height: 600px;
 	border: 1px solid #CCC;
-	margin: 10% auto;
+	margin: 5% auto;
 	font: normal 16px/50px "microsoft yahei";
 	text-align: center;
 	border-radius: 10px;
 }
 .actual{
-	border: 1px solid red;
 	width: 90%;
 	height: 170px;
 	margin: 2% auto 0;
@@ -26,16 +25,79 @@ body{
 .actual_temp{
 	float: left;
 }
+.actual_temp h1{
+	font: bold 60px/60px "microsoft yahei";
+	margin-top: 20px;
+}
 .actual_temp i{
 	display: inline-block;
-	width: 70px;
-	height: 70px;
-	background: url(../img/icon.jpg) -600px -600px no-repeat;
-	background-size: 70px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/switch.png) 0 0 no-repeat;
+	background-size: 20px;
+	position: relative;
+	top: 5px;
+	left: 10px;
+	cursor: pointer;
 }
 .actual_info{
 	float: right;
+	width: 60%;
+	height: 90%;
 }
 .actual_info .info{
+	display: inline-block;
+	width: 25%;
+	height: 90%;
+	margin-top: 3%;
+	margin-left: 10px;
+	border: 2px solid #fff;
+	border-radius: 10%;
+}
+.info h2{
+	font: normal 25px/60px "microsoft yahei";
+	letter-spacing: 3px;
+}
+.info span{
+	display: inline-block;
+	margin-top: 10%;
+	font-size: 18px;
+}
+ul{
+	list-style: none;
+}
+.res{
+	width: 90%;
+	margin: 2% auto 0;
+	border: 1px solid #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	width: 49.5%;
+	height: 100%;
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+	font: bold 30px/50px "microsoft yahei";
+}
+.nav a:first-child{
+	background-color: #fff;
+	color: #4990E2;
+	border-top-left-radius: 10px;
+}
+.nav a:last-child{
+	border-top-right-radius: 10px;
+}
+.index, .future{
+	width: 98%;
+	position: relative;
+	top: 12px;
+	text-align: left;
+	padding-left: 15px;
+}
+.index h3, .index p, .future h3, .future p{
 	display: inline-block;
 }

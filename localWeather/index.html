@@ -10,46 +10,103 @@
 			<section>
 				<div class="actual">
 					<div class="actual_temp">
-						<div>实时天气 | 苏州</div>
-						<i></i>
-						<h2>31</h2>
+						<div>实时天气 | 苏州<i></i></div>
+						<h1>31°С</h1>
 					</div>
 					<div class="actual_info">
 						<div class="info">
-							<div>湿度</div>
+							<h2>湿度</h2>
 							<span>94%</span>
 						</div>
 						<div class="info">
-							<div>风向</div>
+							<h2>风向</h2>
 							<span>东风</span>
 						</div>
 						<div class="info">
-							<div>风力强度</div>
+							<h2>风力强度</h2>
 							<span>1级</span>
 						</div>
 					</div>
+				</div>
+				<div class="res">
+					<div class="nav">
+						<a href="#">指数信息</a>
+						<a href="#">未来七天</a>
+					</div>
+					<ul class="index" id="index">
+						<li>
+							<h3>穿衣指数：</h3>
+							<p>hahh</p>
+						</li>
+						<li>
+							<h3>穿衣建议：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>运动指数：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>旅行指数：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>紫外线指数：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>天气：</h3>
+							<p></p>
+						</li>
+					</ul>
+					<ul class="future" id="future" style="display: none;">
+						<li>
+							<h3>今天：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>明天：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>后天：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>今天：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>今天：</h3>
+							<p></p>
+						</li>
+						<li>
+							<h3>今天：</h3>
+							<p></p>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</div>
 		
 		<!--<script src="js/jquery-3.2.1.min.js"></script>-->
-		<!--<script src="js/index.js"></script>-->
-		<script>
+		<script src="js/index.js"></script>
+		<!--<script>
 			function showWeather(response){
 				var temp = document.getElementById("temp");
 				//temp.innerText = response.result.sk.temp;
 				console.log(response);
 			}
 			window.onload = function(){
-				var update = document.getElementById("update");
+				var convert = document.getElementsByTagName("i");
 				
-				update.onclick = function(){
+				convert[0].onclick = function(){
 					let script = document.createElement("script");
 					script.src = "http://v.juhe.cn/weather/index?format=2&cityname=%E8%8B%8F%E5%B7%9E&key=ff8591e26fee2f9902562d1332f683f2&callback=showWeather";
 					document.body.appendChild(script);
 					
 				}
 			}
-		</script>
+		</script>-->
 	</body>
 </html>
