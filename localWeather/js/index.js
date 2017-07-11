@@ -64,21 +64,15 @@ function showWeather(response){
 	index_info[2].innerText = response.result.today.exercise_index;
 	index_info[3].innerText = response.result.today.travel_index;
 	index_info[4].innerText = response.result.today.uv_index;
-	index_info[5].innerText = response.result.today.weather;
+	index_info[5].innerText = response.result.today.wind;
 	
 	//未来七天
-	date_info[5].innerText = response.result.future[0].date;
-	date_info[6].innerText = response.result.future[1].date;
-	date_info[7].innerText = response.result.future[2].date;
-	date_info[8].innerText = response.result.future[3].date;
-	date_info[9].innerText = response.result.future[4].date;
-	date_info[10].innerText = response.result.future[5].date;
-	index_info[5].innerText = response.result.future[0].temperature;
-	index_info[6].innerText = response.result.future[1].temperature;
-	index_info[7].innerText = response.result.future[2].temperature;
-	index_info[8].innerText = response.result.future[3].temperature;
-	index_info[9].innerText = response.result.future[4].temperature;
-	index_info[10].innerText = response.result.future[5].temperature;
+	for(let i = 3; i < 6; i++){
+		date_info[i+5].innerText = response.result.future[i].date;
+	}
+	for(let i = 0; i < 6; i++){
+		index_info[i+5].innerText = response.result.future[i].temperature;
+	}
 }
 window.onload = function(){
 	var convert = document.getElementById("convert");
@@ -88,4 +82,5 @@ window.onload = function(){
 		script.src = "http://v.juhe.cn/weather/index?format=2&cityname=%E8%8B%8F%E5%B7%9E&key=ff8591e26fee2f9902562d1332f683f2&callback=showWeather";
 		document.body.appendChild(script);
 	}
+	
 }
